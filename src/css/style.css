@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    nav {
+        ul {
+
+            list-style-type: none;
+            display: flex;
+            gap: 10vh;
+
+            li {
+
+                a {
+                    color: black;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    text-shadow: none;
+                    font-size: 15px;
+
+                    &:hover {
+                        color: #29ABE2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+
+    #upBanner {
+        background-image: url('/src/images/upbanner/home01.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: 90vh;
+            object-fit: cover;
+        }
+
+        #upBannerBody {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            align-items: center;
+            
+            #upBannerHeader {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                h1 {
+                    font-size: 60px;
+                }
+
+                p {
+                    font-size: 24px;
+                }
+            }
+
+            #upBannerLinks {
+                margin-top: 5vh;
+
+                a {
+                    background-color: #29ABE2;
+                    padding: 2vh 4vh;
+                    color: white;
+                    border-bottom: 2px solid #1a8dbe;
+                    border-radius: 6px;
+
+                    &:hover {
+                        background-color: #19202E;
+                        border-bottom: 2px solid #0062cc;
+                        transition: 0.2s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+    
+    #growUpBanner {
+        background-color: #29ABE2;
+        padding: 8vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+
+        h3 {
+            font-size: 27px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        a {
+            color: white;
+            background-color: #19202E;
+            padding: 3vh;
+            border-radius: 7px;
+            border: solid 2px grey;
+
+            &:hover {
+                background-color: #3fb4e5;
+                transition: 0.2s ease-in-out;
+            }
+        }
+    }
+}
